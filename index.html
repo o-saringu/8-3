@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF=8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="midasi">
+<h1>プログラム復習コンテンツ</h1>
+<a href="https://o-saringu.github.io/mokuji/">
+<div class="home"></div>
+</a>
+</div>
+
+<div class="oomidasi"><p>図形の移動</div>
+
+<div class="yoko">
+	<div class="yoko1">
+	<div class="komidasi1"><p>サンプルコードの結果</p></div>
+	<img src = "8-3.png">
+	</div>
+	<div class="yoko1">
+	<div class="komidasi2"><p>サンプルコード</div>
+	<div class="code">
+		<p>　　	int radius=40;
+		<p>　　	float x=110;
+		<p>　　	float speed=0.5;
+		<p>　　	int direction=1;
+		<p>　　	　
+		<p>　　	void setup(){
+		<p>　　	　size(240, 120);
+		<p>　　	　ellipseMode(RADIUS);
+		<p>　　	}
+		<p>
+		<p>　　	void draw(){
+		<p>　　	　background(0);
+		<p>　　	　x+=speed*direction;
+		<p>　　	　if((x>width-radius)||(x<radius)){
+		<p>　　	　　direction=-direction;　　			//方向転換
+		<p>　　	　}
+		<p>　　	　if(direction==1){
+		<p>　　	　　arc(x, 60, radius, radius, 0.52, 5.76);	//右向き
+		<p>　　	　}else{
+		<p>　　	　　arc(x, 60, radius, radius, 3.67, 8.9);	//左向き
+		<p>　　	　}
+		<p>　　	}
+	</div>
+	</div>
+</div>
+
+
+<div class="komidasi3"><p>説明文</div>
+<div class="ep">
+	<p>　流れるような動きを表現するためにはfloat型の変数を用いる。
+	<p>　draw()が実行されるたびに図形が移動し動いているように見える。
+	<p>　例では、図形が壁に当たると方向転換して逆向きに移動するプログラムである。
+	<p>　図形が端に達したらdirection変数の符号を反転させ、if文で判定を行う。
+	<p>　
+</div>
+
+</body>
+
+
