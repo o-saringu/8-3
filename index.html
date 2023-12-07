@@ -1,7 +1,14 @@
 <!DOCTYPE html>
+<html lang="jp">
+
 <head>
-<meta charset="UTF=8">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=M+PLUS+1p:wght@500&family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,26 +29,26 @@
 	<div class="yoko1">
 	<div class="komidasi2"><p>サンプルコード</div>
 	<div class="code">
-		<p>　　	int radius=40;
-		<p>　　	float x=110;
-		<p>　　	float speed=0.5;
-		<p>　　	int direction=1;
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >int</a> radius=40;
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float</a> x=110;
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float</a> speed=0.5;
+		<p>　　	<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >int</a> direction=1;
 		<p>　　	　
-		<p>　　	void setup(){
-		<p>　　	　size(240, 120);
-		<p>　　	　ellipseMode(RADIUS);
+		<p>　　	<a href="https://o-saringu.github.io/5-2/"target="_blank" rel="noopener noreferrer" >void setup()</a>{
+		<p>　　	　<a href="https://o-saringu.github.io/size/"target="_blank" rel="noopener noreferrer" >size</a>(240, 120);
+		<p>　　	　<a href="https://o-saringu.github.io/ellipseMode/"target="_blank" rel="noopener noreferrer" >ellipseMode</a>(RADIUS);
 		<p>　　	}
 		<p>
-		<p>　　	void draw(){
-		<p>　　	　background(0);
+		<p>　　	<a href="https://o-saringu.github.io/5-1/"target="_blank" rel="noopener noreferrer" >void draw()</a>{
+		<p>　　	　<a href="https://o-saringu.github.io/background/"target="_blank" rel="noopener noreferrer" >background</a>(0);
 		<p>　　	　x+=speed*direction;
-		<p>　　	　if((x>width-radius)||(x<radius)){
+		<p>　　	　<a href="https://o-saringu.github.io/if/"target="_blank" rel="noopener noreferrer" >if</a>((x><a href="https://o-saringu.github.io/4-3/"target="_blank" rel="noopener noreferrer" >width</a>-radius)||(x<radius)){
 		<p>　　	　　direction=-direction;　　			//方向転換
 		<p>　　	　}
-		<p>　　	　if(direction==1){
-		<p>　　	　　arc(x, 60, radius, radius, 0.52, 5.76);	//右向き
+		<p>　　	　<a href="https://o-saringu.github.io/if/"target="_blank" rel="noopener noreferrer" >if</a>(direction==1){
+		<p>　　	　　<a href="https://o-saringu.github.io/arc/"target="_blank" rel="noopener noreferrer" >arc</a>(x, 60, radius, radius, 0.52, 5.76);	//右向き
 		<p>　　	　}else{
-		<p>　　	　　arc(x, 60, radius, radius, 3.67, 8.9);	//左向き
+		<p>　　	　　<a href="https://o-saringu.github.io/arc/"target="_blank" rel="noopener noreferrer" >arc</a>(x, 60, radius, radius, 3.67, 8.9);	//左向き
 		<p>　　	　}
 		<p>　　	}
 	</div>
@@ -51,10 +58,10 @@
 
 <div class="komidasi3"><p>説明文</div>
 <div class="ep">
-	<p>　流れるような動きを表現するためにはfloat型の変数を用いる。
-	<p>　draw()が実行されるたびに図形が移動し動いているように見える。
+	<p>　流れるような動きを表現するためには<a href="https://o-saringu.github.io/de-ta/"target="_blank" rel="noopener noreferrer" >float型</a>の変数を用いる。
+	<p>　<a href="https://o-saringu.github.io/5-1/"target="_blank" rel="noopener noreferrer" >draw()</a>が実行されるたびに図形が移動し動いているように見える。
 	<p>　例では、図形が壁に当たると方向転換して逆向きに移動するプログラムである。
-	<p>　図形が端に達したらdirection変数の符号を反転させ、if文で判定を行う。
+	<p>　図形が端に達したらdirection変数の符号を反転させ、<a href="https://o-saringu.github.io/if/"target="_blank" rel="noopener noreferrer" >if文</a>で判定を行う。
 	<p>　
 </div>
 
